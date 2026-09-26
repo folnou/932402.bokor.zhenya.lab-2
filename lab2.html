@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>О себе</title>
+    <link rel="stylesheet" href="stylelab2.css">
+    <style>
+        aside {
+            width: 200px;
+            background-color: #222;
+            float: right;
+            margin-left: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 style="font-weight: 700;">Бокор Евгений</h1>
+        <p>Любитель кино и сериалов</p>
+    </header>
+
+    <main>
+        <div style="position: relative; display: inline-block;">
+            <img src="image/photo.jpg" alt="Я" width="777" height="200">
+            <span style="position: absolute; top: 10px; left: 10px; background: gold; color: black; padding: 5px;">Cinema</span>
+        </div>
+
+        <section>
+            <h2>Навыки</h2>
+            <ul>
+                <li>Сценарный анализ</li>
+                <li>Импровизация</li>
+                <li>Анлиз графики</li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Проекты</h2>
+            <div class="projects-grid">
+                <div class="project-card">Зелёный фонарь — альтернативный сценарий</div>
+                <div class="project-card">Всеведущий читатель — трейлер сериала</div>
+                <div class="project-card">Живая сталь — продолжение франшизы</div>
+                <div class="project-card">Колобок — трейлер конкурент человека-паука</div>
+            </div>
+        </section>
+
+        <form>
+            <input type="text" name="name" placeholder="Имя"><br><br>
+            <input type="email" name="email" placeholder="Email"><br><br>
+            <textarea name="message" placeholder="Сообщение"></textarea><br><br>
+            <button type="submit">Отправить</button>
+        </form>
+    </main>
+
+    <aside>
+        <h3>Любимые жанры</h3>
+        <p>Фэнтези и фантастика</p>
+    </aside>
+
+    <footer>
+        <p>&copy; 2026 Бокор Евгений</p>
+        <a href="#">Главная</a>
+    </footer>
+</body>
+</html>

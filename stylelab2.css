@@ -1,0 +1,65 @@
+:root {
+    --main-black: #000000;
+    --accent-gold: #d4af37;
+    --text-white: #ffffff;
+}
+
+body {
+    background-color: var(--main-black);
+    color: var(--text-white);
+    font-family: sans-serif;
+}
+
+.projects-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.project-card {
+    background-color: #1a1a1a;
+    border: 1px solid var(--accent-gold);
+    padding: 15px;
+    position: relative;
+    overflow: hidden;
+}
+
+.project-card::before {
+    content: '';
+    position: absolute;
+    top: 0; left: 0; right: 0; bottom: 0;
+    background-color: rgba(212, 175, 55, 0.3);
+    opacity: 0;
+    transition: 0.3s;
+}
+
+.project-card:hover::before {
+    opacity: 1;
+}
+
+.project-card:hover {
+    font-size: 1.1em;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #fff;
+}
+
+button:active {
+    transform: scale(0.95);
+}
+
+button:focus {
+    outline: 3px solid red;
+    outline-offset: 2px;
+}
+
+a:visited {
+    color: purple;
+}
+
+h1, h2, h3 {
+    color: var(--accent-gold);
+}
