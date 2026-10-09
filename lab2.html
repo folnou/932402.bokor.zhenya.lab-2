@@ -6,10 +6,10 @@
     <link rel="stylesheet" href="stylelab2.css">
     <style>
         aside {
-            width: 200px;
-            background-color: #222;
-            float: right;
-            margin-left: 20px;
+            width: 250px;
+            background-color: #1a1a1a;
+            padding: 20px;
+            border-left: 4px solid var(--gold);
         }
     </style>
 </head>
@@ -20,36 +20,60 @@
     </header>
 
     <main>
-        <div style="position: relative; display: inline-block;">
+        <div class="img-box">
             <img src="image/photo.jpg" alt="Я" width="777" height="200">
-            <span style="position: absolute; top: 10px; left: 10px; background: gold; color: black; padding: 5px;">Cinema</span>
+            <span class="badge">Cinema</span>
         </div>
 
         <section>
             <h2>Навыки</h2>
             <ul>
-                <li>Сценарный анализ</li>
+                <li class="static-pos">Сценарный анализ</li>
                 <li>Импровизация</li>
-                <li>Анлиз графики</li>
+                <li>Анализ графики</li>
             </ul>
         </section>
 
         <section>
             <h2>Проекты</h2>
-            <div class="projects-grid">
-                <div class="project-card">Зелёный фонарь — альтернативный сценарий</div>
-                <div class="project-card">Всеведущий читатель — трейлер сериала</div>
-                <div class="project-card">Живая сталь — продолжение франшизы</div>
-                <div class="project-card">Колобок — трейлер конкурент человека-паука</div>
+            <div class="grid">
+                <div class="card">
+                    <h3>Зелёный фонарь</h3>
+                    <p>Альтернативный сценарий</p>
+                </div>
+                <div class="card">
+                    <h3>Всеведущий читатель</h3>
+                    <p>Трейлер сериала</p>
+                </div>
+                <div class="card">
+                    <h3>Живая сталь</h3>
+                    <p>Продолжение франшизы</p>
+                </div>
+                <div class="card">
+                    <h3>Колобок</h3>
+                    <p>Трейлер конкурент человека-паука</p>
+                </div>
             </div>
         </section>
 
-        <form>
-            <input type="text" name="name" placeholder="Имя"><br><br>
-            <input type="email" name="email" placeholder="Email"><br><br>
-            <textarea name="message" placeholder="Сообщение"></textarea><br><br>
-            <button type="submit">Отправить</button>
-        </form>
+        <section>
+            <h2>Обратная связь</h2>
+            <form>
+                <div class="form-group">
+                    <label for="name">Имя:</label>
+                    <input type="text" id="name" name="name">
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email">
+                </div>
+                <div class="form-group">
+                    <label for="message">Сообщение:</label>
+                    <textarea id="message" name="message"></textarea>
+                </div>
+                <button type="submit">Отправить</button>
+            </form>
+        </section>
     </main>
 
     <aside>
